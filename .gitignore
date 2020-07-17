@@ -1,0 +1,132 @@
+.DS_Store
+.Trashes
+.idea
+*.swp
+*.pkg
+.vscode
+
+# Python artifacts
+*.pyc
+kite-python/dist
+kite-python/build
+kite-python/kite.egg-info
+
+# node.js
+node_modules/
+npm-debug.log
+.module-cache/
+
+# js files bundled into one (for webpack modules)
+bundle.min.js
+bundle.min.js.map
+test.min.js
+test.min.js.map
+
+# ignore libkited build directory
+osx/libkited
+
+# ignore electron build (for Xcode)
+osx/electron
+
+# ignore kite-lsp build directory (for Xcode)
+osx/kitelsp
+
+# some bindatas should be regenerated before every build:
+kite-go/webappui/bindata.go
+kite-go/kitecomui/bindata.go
+
+backend/build
+backend/Makefile.generated
+
+osx/build
+osx/pkgs
+osx/bundles
+
+# ignore Linux build artifacts
+scripts/builds/
+
+# less-watch automatically builds this file, which is useless:
+client-ui/css/theme-dark.css
+
+Godeps/Readme
+Godeps/_workspace
+
+golint.test
+gofmt.test
+coverage.txt
+
+# Vagrant
+*.box
+*.vagrant
+
+# Terraform
+dev.tfvars
+*.tfstate.backup
+devops/fabric/backup
+
+# Enterprise
+enterprise/build
+
+# Puppet
+devops/puppet-kite/pkg
+
+# Packer
+devops/packer-templates/scripts/docker-config.sh
+.artifacts
+
+kite-python.tar.gz
+
+parse
+!parse/
+
+scan
+!scan/
+
+merge-import-graphs
+!merge-import-graphs/
+
+# standard name for virtual envs
+venv/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
+
+# ignore tensorflow files copied from linux/tensorflow/lib/ to simplify running kited on linux
+/libtensorflow.so
+/libtensorflow_framework.so
+
+# ignore kited binary, e.g. compiled during development
+/kited
