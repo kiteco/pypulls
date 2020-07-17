@@ -16,7 +16,7 @@ with the following scopes:
 Checkout this repo, `cd` to its root, then run the following terminal commands:
 
 ```bash
-virtualenv venv
+python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
